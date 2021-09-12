@@ -11,6 +11,6 @@ describe 'populating the bears table' do
   end
   
   it 'has an unnamed bear' do
-    expect(@db.execute("SELECT COUNT(*) FROM bears WHERE name IS NULL;").flatten[0]).to eq(1)
+    expect(@db.execute("SELECT COUNT(*) FROM bears WHERE names IS NULL;").flatten[0]).to eq(1)
   end
 end
